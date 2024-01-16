@@ -87,7 +87,7 @@ Use `code` in your Markdown file.
 
 ### 带格式化的链接
 
-[强调](https://markdown.com.cn/basic-syntax/links.html#emphasis) 链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。
+*强调*链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。
 
 ***例：***
 
