@@ -20,11 +20,37 @@
 ## 数据结构
 
 1. 字符串（String）：用单引号或双引号括起来的文本数据，如 'Hello', "Python"
+
 2. 列表（List）：有序的可变集合，使用方括号括起来，如 [1, 2, 3, 'hello']
+
+   list() 方法可用于将元组转换为列表。
+
 3. 字典（Dictionary）：无序的键值对集合，使用大括号括起来，如 {'name': 'Alice', 'age': 25}
+
 4. 元组（Tuple）：有序的不可变集合，使用小括号括起来，如 (1, 2, 3, 'world')
+
+   与字符串一样，元组之间可以使用 + 号和 * 号进行运算。这就意味着他们可以组合和复制，运算后会生成一个新的元组。
+
+   | Python 表达式                | 结果                         | 描述         |
+   | :--------------------------- | :--------------------------- | :----------- |
+   | len((1, 2, 3))               | 3                            | 计算元素个数 |
+   | (1, 2, 3) + (4, 5, 6)        | (1, 2, 3, 4, 5, 6)           | 连接         |
+   | ('Hi!',) * 4                 | ('Hi!', 'Hi!', 'Hi!', 'Hi!') | 复制         |
+   | 3 in (1, 2, 3)               | True                         | 元素是否存在 |
+   | for x in (1, 2, 3): print x, | 1 2 3                        | 迭代         |
+
 5. 集合（Set）：无序的不重复元素集合，使用大括号括起来，如 {1, 2, 3, 4, 5}
+
 6. 切片（Slice）：用于从序列中获取子序列的一种方法，如 list[1:3], string[2:], tuple[:4]
+
+   返回一个表示由 `range(start, stop, step)` 指定的索引集的 [slice](https://docs.python.org/zh-cn/3/glossary.html#term-slice) 对象。*start* 参数默认为 `0` ,*step* 参数默认为 `1`。
+
+   ``` 
+   a[start:stop]       # 从 index=start 开始（即包含start），到 index=stop-1（即不包含stop） 
+   a[start:]      	    # 从 index=start 开始（包含 start ），到最后 
+   a[:stop]       	    # 从头开始，到 stop-1 
+   a[:]                # 取整个 List
+   a[start:stop:step]  # 从 index=start 到 index=stop-1，每隔 step 取一个，不超过 stop-1
 
 ## 示例
 
