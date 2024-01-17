@@ -29,12 +29,6 @@
 ## 示例
 
 ```
-# 数字类型示例
-x = 5
-y = 3.14
-z = True
-w = 2 + 3j
-
 # 数据结构示例
 string_example = 'Hello, Python!'
 list_example = [1, 2, 3, 'hello']
