@@ -91,7 +91,43 @@ Use `code` in your Markdown file.
 
 ***例：***
 
-![img](https://github.com/strv122bvm/typora.img/blob/main/QQ%E6%88%AA%E5%9B%BE20240117014340.png)
+![img](https://github.com/strv122bvm/typora.img/blob/main/QQ%E6%88%AA%E5%9B%BE20240117014340.png "带格式化的链接")
 
+### 引用类型链接
 
+引用样式链接是一种特殊的链接，它使URL在Markdown中更易于显示和阅读。参考样式链接分为两部分：与文本保持内联的部分以及存储在文件中其他位置的部分，以使文本易于阅读。
 
+#### 链接的第一部分格式
+
+引用类型的链接的第一部分使用两组括号进行格式设置。第一组方括号包围应显示为链接的文本。第二组括号显示了一个标签，该标签用于指向您存储在文档其他位置的链接。
+
+尽管不是必需的，可以在第一组和第二组括号之间包含一个空格。第二组括号中的标签不区分大小写，可以包含字母，数字，空格或标点符号。
+
+以下示例格式对于链接的第一部分效果相同：
+
+- `[hobbit-hole][1]`
+- `[hobbit-hole] [1]`
+
+#### 链接的第二部分格式
+
+引用类型链接的第二部分使用以下属性设置格式：
+
+1. 放在括号中的标签，其后紧跟一个冒号和至少一个空格（例如`[label]:`）。
+2. 链接的URL，可以选择将其括在尖括号中。
+3. 链接的可选标题，可以将其括在双引号，单引号或括号中。
+
+以下示例格式对于链接的第二部分效果相同：
+
+- `[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle`
+- `[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"`
+- `[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle 'Hobbit lifestyles'`
+- `[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)`
+- `[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> "Hobbit lifestyles"`
+- `[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> 'Hobbit lifestyles'`
+- `[1]: <https://en.wikipedia.org/wiki/Hobbit#Lifestyle> (Hobbit lifestyles)`
+
+可以将链接的第二部分放在Markdown文档中的任何位置。有些人将它们放在出现的段落之后，有些人则将它们放在文档的末尾（例如尾注或脚注）
+
+## 10.图片语法
+
+[![沙漠中的岩石图片](/assets/img/shiprock.jpg "Shiprock")](https://markdown.com.cn )
