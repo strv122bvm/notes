@@ -6,9 +6,18 @@
 2. 推导式
 
    - Python中的推导式是一种简洁的语法，用于快速创建列表、字典和集合。
-   - 列表推导式示例：[x for x in range(10) if x % 2 == 0]
-   - 字典推导式示例：{k: v for k, v in zip(keys, values)}
-   - 集合推导式示例：{x for x in range(10)}
+
+   - [表达式 for 变量 in 列表 (if 条件)]
+
+     列表推导式示例：[x for x in range(10) if x % 2 == 0]
+
+   - { key_exp:value_exp for key,value in 序列 (if 条件) }
+
+     字典推导式示例：{k: v for k, v in zip.items}
+
+   - { 表达式 for 变量 in 序列 (if 条件) }
+
+     集合推导式示例：{x for x in range(10)}
 
 3. 错误和异常捕获
 
