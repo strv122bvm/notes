@@ -34,15 +34,21 @@
 
 4. map、lambda和filter函数的使用
 
-   - lambda函数：匿名函数，用于快速定义简单的函数。lambda表达式的基本语法：lambda arg1,arg2,arg3… :<表达式>。arg1/arg2/arg3为函数的**参数（函数输入）**，表达式相当于**函数体**，运算结果是表达式的运算结果。
-   - map函数：将函数应用于可迭代对象的每个元素，并返回结果组成的**迭代器**。
-   - filter函数：根据指定函数的条件过滤可迭代对象的元素。例如filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])指定将列表[1,2,3,4,5]中能够被2整除的元素过滤出来。
-
+   - lambda函数：匿名函数，用于快速定义简单的函数。  
+     lambda表达式的基本语法：lambda arg1,arg2,arg3… :<表达式>。  
+     |arg1/arg2/arg3为函数的**参数（函数输入）**，表达式相当于**函数体**，运算结果是表达式的运算结果。
+   - map函数：将函数应用于可迭代对象的每个元素，并返回结果组成的**迭代器**。  
+     map() 函数语法：map(function, iterable, ...)    
+     function -- 函数，iterable -- 一个序列
+   - filter函数：根据指定函数的条件过滤可迭代对象的元素。例如filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])指定将列表[1,2,3,4,5]中能够被2整除的元素过滤出来。  
+     filter()函数语法：filter(function, iterable)  
+     function -- 函数，iterable -- 一个序列
+   
    示例：
-
+   
    ```
    # lambda示例
-   add = lambda x, y: x + y
+   >>>add = lambda x, y: x + y
    
    # map示例
    >>>map(lambda x: x * 2, [1, 2, 3, 4])
