@@ -38,11 +38,11 @@
      lambda表达式的基本语法：lambda arg1,arg2,arg3… :<表达式>。  
      |arg1/arg2/arg3为函数的**参数（函数输入）**，表达式相当于**函数体**，运算结果是表达式的运算结果。
    - map函数：将函数应用于可迭代对象的每个元素，并返回结果组成的**迭代器**。  
-     map() 函数语法：map(function, iterable, ...)    
-     function -- 函数，iterable -- 一个序列
+     map() 函数语法：map(function, iterable)    
+     function -- 函数，iterable -- 可迭代对象
    - filter函数：根据指定函数的条件过滤可迭代对象的元素。例如filter(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])指定将列表[1,2,3,4,5]中能够被2整除的元素过滤出来。  
      filter()函数语法：filter(function, iterable)  
-     function -- 函数，iterable -- 一个序列
+     function -- 函数，iterable -- 可迭代对象
    
    示例：
    
