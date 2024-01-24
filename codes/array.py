@@ -35,5 +35,6 @@ t7 = np.array([random.random() for i in range(10)])
 print(t7)
 print(t7.dtype)
 
+# 保留小数位数
 t8 = np.round(t7, 2)
 print(t8)
